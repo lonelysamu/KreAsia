@@ -12,7 +12,7 @@ body {
 
 }
 
-h2{
+h2 {
     line-height: 80%;
 }
 
@@ -70,7 +70,7 @@ h1, h2, h3 {
     line-height: 80%;
 }
 
-.specialfonthighlight{
+.specialfonthighlight {
     color: var(--main);
 }
 
@@ -198,7 +198,23 @@ h1, h2, h3 {
 }
 
 .noticemeeffect {
-    animation: 1s ease-in-out 0s infinite forwards slideInFromTop;
+    animation: 2s ease-in-out 0s infinite forwards slideInFromTop;
+}
+
+.blinkinandout1 {
+    animation: 3s ease-in-out 0.4s infinite forwards blinking;
+}
+
+.blinkinandout2 {
+    animation: 3s ease-in-out 0.8s infinite forwards blinking;
+}
+
+.blinkinandout3 {
+    animation: 3s ease-in-out 1.2s infinite forwards blinking;
+}
+
+.blinkinandout4 {
+    animation: 3s ease 1.6s infinite forwards blinking;
 }
 
 .wibbly {
@@ -217,40 +233,62 @@ h1, h2, h3 {
     animation-iteration-count: infinite;
 }
 
-.pauseanimationon:hover{
-    
-    -webkit-animation-play-state:paused;
-    -moz-animation-play-state:paused;
-    -o-animation-play-state:paused;
-    animation-play-state:paused;
+.pauseanimationon:hover {
+
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
 }
 
-.clickable{
+.specialimg {
+    height: 100vh;
+    width: auto;
+    filter: opacity(0.3);
+}
+
+.carousel-item {
+    overflow-x: hidden;
+}
+
+.specialsection {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.specialimgcase1 {
+    min-height: 25vh;
+
+}
+
+
+.clickable {
     transition: 0.5s;
     cursor: pointer;
 }
 
-.clickable:hover{
+.clickable:hover {
     transition: 0.5s;
     transform: scale(1.1);
 }
 
-.clickablebutton{
+.clickablebutton {
     transition: 0.5s;
     cursor: pointer;
 }
 
-.clickablebutton:hover{
+.clickablebutton:hover {
     transition: 0.5s;
-   background-color: white;
-   color: var(--dark);
+    background-color: white;
+    color: var(--dark);
 }
 
-.nostyle{
+.nostyle {
     color: white;
     text-decoration: none;
 }
-.nostyle:hover{
+
+.nostyle:hover {
     color: white;
     text-decoration: none;
 }
@@ -409,6 +447,17 @@ h1, h2, h3 {
     }
 }
 
+
+@keyframes blinking {
+    0% {filter: opacity(0);}
+    20% {filter: opacity(0);}
+    40% {filter: opacity(1);}
+    60% {filter: opacity(1);}
+    80% {filter: opacity(0);}
+    100% {filter: opacity(0);}
+
+}
+
 .m-scroll {
     display: flex;
     position: relative;
@@ -444,13 +493,13 @@ h1, h2, h3 {
     margin: 0;
     font-size: 15vh;
     color: transparent;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
     transition: all 4s ease;
 }
 
 .m-scroll__title a {
     text-decoration: none;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
     color: transparent;
 }
 
