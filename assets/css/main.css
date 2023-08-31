@@ -202,19 +202,19 @@ h1, h2, h3 {
 }
 
 .blinkinandout1 {
-    animation: 3s ease-in-out 0.4s infinite forwards blinking;
+    animation: 8s ease-in-out 0s infinite forwards blinking;
 }
 
 .blinkinandout2 {
-    animation: 3s ease-in-out 0.8s infinite forwards blinking;
+    animation: 8s ease-in-out 2s infinite forwards blinking;
 }
 
 .blinkinandout3 {
-    animation: 3s ease-in-out 1.2s infinite forwards blinking;
+    animation: 8s ease-in-out 4s infinite forwards blinking;
 }
 
 .blinkinandout4 {
-    animation: 3s ease 1.6s infinite forwards blinking;
+    animation: 8s ease 6s infinite forwards blinking;
 }
 
 .wibbly {
