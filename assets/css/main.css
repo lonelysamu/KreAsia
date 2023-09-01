@@ -611,6 +611,7 @@ input{
     border: none;
     width: 100%;
     padding: 1%;
+    color: rgba(0, 0, 0, 0.507);
 }
 textarea{
     width: 100%;
