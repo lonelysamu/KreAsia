@@ -293,6 +293,19 @@ h1, h2, h3 {
     text-decoration: none;
 }
 
+.buttonstyle1{
+    transition: 0.5s;
+    background-color: var(--light);
+    color: white;
+    border: 1px solid transparent;
+}
+.buttonstyle1:hover{
+    transition: 0.5s;
+    background-color: var(--main);
+    color: white;
+    border: 1px solid transparent;
+}
+
 
 
 @keyframes slideInFromLeft {
