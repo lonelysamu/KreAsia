@@ -244,6 +244,7 @@ h1, h2, h3 {
 .specialimg {
     height: 100vh;
     width: auto;
+    object-position: end;
 }
 
 .carousel-item {
@@ -561,7 +562,7 @@ h1, h2, h3 {
 }
 
 logo-slider {
-    --image-size: 300px;
+    --image-size: 30vh;
     border: transparent;
     padding: 20px;
     overflow: hidden;
@@ -617,12 +618,7 @@ textarea{
     min-height: 10vh;
 }
 
-@media (max-width: 900px) {
-    logo-slider {
-        --image-size: 50px;
-        --image-size: min(max(50px, 10vw), 100px);
-    }
-}
+
 
 @keyframes marquee {
     0% {
