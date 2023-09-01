@@ -241,15 +241,26 @@ h1, h2, h3 {
     animation-play-state: paused;
 }
 
+.stupidimg{
+    width: 90%;
+    border-radius: 1rem;
+}
+
+
+
+.carouselcontainer{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100vw 
+}
 .specialimg {
     height: 100vh;
     width: auto;
     object-position: end;
 }
 
-.carousel-item {
-    overflow-x: hidden;
-}
+
 
 .specialsection {
     height: 100vh;
